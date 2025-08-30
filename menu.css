@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=TTLakes&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'TT Lakes', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.left-frame {
+    width: 30%;
+    position: relative;
+    box-shadow: 20px 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    overflow-y: auto;
+    
+}
+
+
+
+
+.right-frame {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px); 
+    pointer-events: none; 
+}
+
+
+.logo_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.logo_nav img {
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.logo_img{
+    padding-right: 200px;
+}
+
+
+.menu ul {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    list-style: none;
+}
+
+.menu li {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    list-style: none;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu li a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #41F6D7;
+    color: #7E7E82;
+}
+
+.menu li a.active{
+    color: #7E7E82;
+}
+
+
+.bottom-icons {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+.bottom-icons img {
+    padding-right: 16px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+
+.contact-info {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.phone-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.language-selectors {
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.language-selectors span {
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.language-selectors span:hover{
+    color: #7E7E82;
+}
+.language-selectors span:active{
+    color: #7E7E82;
+}
